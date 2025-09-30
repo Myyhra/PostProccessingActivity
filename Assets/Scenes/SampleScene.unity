@@ -3537,7 +3537,7 @@ MonoBehaviour:
   m_currentStamperUndoOperation: 0
   m_stamperUndoOperations: []
   m_linkedBiomeController: {fileID: 0}
-  m_cachedRenderTexture: {fileID: 1204805693}
+  m_cachedRenderTexture: {fileID: 0}
   m_cachedMaskTexture: {fileID: 477462091}
   m_drawPreview: 1
   m_showSeaLevelinStampPreview: 1
@@ -6537,6 +6537,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6662,6 +6663,19 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c57b0333aea2a145861cae1f2285055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rate: 60
 --- !u!1 &340962229
 GameObject:
   m_ObjectHideFlags: 0
@@ -9627,7 +9641,7 @@ MonoBehaviour:
       m_warpIterations: 2.3
       m_warpStrength: 1.04
       m_warpOffset: {x: 2.7, y: 0, z: 0, w: 0}
-    m_noiseSettings: {fileID: 812661608}
+    m_noiseSettings: {fileID: 831929359}
     m_noiseToolSettings:
       worldHeightRemap: {x: 0, y: 0}
       coordSpace: 0
@@ -13882,7 +13896,7 @@ MonoBehaviour:
   m_drawWorldDesignerRulers: 1
   m_drawWorldDesignerDensityViz: 0
   m_autoStampDensityVisualizationTimeStamp: 0
---- !u!114 &812661608
+--- !u!114 &831929359
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19911,43 +19925,6 @@ MonoBehaviour:
   m_drawWorldDesignerRulers: 1
   m_drawWorldDesignerDensityViz: 0
   m_autoStampDensityVisualizationTimeStamp: 0
---- !u!84 &1204805693
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Stamper Cached Render Texture
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 6
-  m_Width: 257
-  m_Height: 257
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 0
-  m_ColorFormat: 49
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_UseDynamicScaleExplicit: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1 &1267310277
 GameObject:
   m_ObjectHideFlags: 0
